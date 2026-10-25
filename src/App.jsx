@@ -175,7 +175,7 @@ const { error } = result;
         </section>
       </>}
       {tab==="cash" && <><section className="panel"><h2>Tambah transaksi kas</h2><CashForm onSave={v=>insert("cash_entries",v)} /></section><section className="panel"><h2>Riwayat kas</h2><CashTable rows={cash} remove={remove}/><p className="balance">Saldo berdasarkan seluruh transaksi: {money(cashBalance)}</p></section></>}
-      <footer>Resto & Cafe Sisi Danau · Simpan data secara online melalui Supabase</footer>
+      <footer>Resto & Cafe Sisi Danau</footer>
     </main>
   </div>;
 }
